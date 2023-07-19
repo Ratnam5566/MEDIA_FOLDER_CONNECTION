@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr>
+                <th>username</th>
+                <th>address</th>
+                <th>profile_pic</th>
+            
+            </tr>
+            {% for i in obj %}
+            <tr>
+                <td>{{i.username}}</td>
+                <td>{{i.address}}</td>
+                <td>{{i.profile_pic}}</td>
+                
+            </tr>
+            {% endfor %}
+            
+
+        </table>
+    </center>
+    <center>
+        <table border="3px">
+            <tr>
+                <th>username</th>
+                <th>email</th>
+                <th>password</th>
+            
+            </tr>
+            {% for j in obj1 %}
+            <tr>
+                <td>{{j.username}}</td>
+                <td>{{j.email}}</td>
+                <td>{{j.password}}</td>
+                
+            </tr>
+            {% endfor %}
+            
+
+        </table>
+    </center>
+</body>
+</html>
